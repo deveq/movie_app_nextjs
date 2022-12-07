@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.title {
+}
+
+.content {
+  width: 60%;
+  text-indent: 10px;
+  color: #666;
+}
+
+.content::first-letter {
+  font-weight: bold;
+  font-size: 20px;
+}

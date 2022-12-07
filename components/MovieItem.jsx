@@ -1,4 +1,4 @@
-const BASE_IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
+export const BASE_IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './MovieItem.module.css';
