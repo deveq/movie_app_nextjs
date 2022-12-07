@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import MovieItem from '../components/MovieItem';
 import Seo from './Seo';
 import styles from './index.module.css';
+import { useRouter } from 'next/router';
 
 const Home = () => {
   const [movies, setMovies] = useState();
@@ -21,6 +22,7 @@ const Home = () => {
         {movies?.map(movie => (
           <MovieItem
             key={movie.id}
+            id={movie.id}
             originalTitle={movie.original_title}
             posterPath={movie.poster_path}
           />
